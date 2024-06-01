@@ -7,8 +7,9 @@
   },
   "version": "0.1.0",
   "description": "React component MessageHistory",
-  "homepage": "https://henryfeesler.com/netology/03/react-chat",
+  "homepage": "https://henryfeesler.com/projects/netology/03/react-chat",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
@@ -24,6 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "node ./scripts/deploy.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@jezvejs/release-tools": "^0.5.1",
+    "dotenv": "^16.4.5"
   }
 }
